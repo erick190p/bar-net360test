@@ -12,9 +12,44 @@
     
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Estilos do Botão de Download -->
+    <style>
+        .area-download {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .btn-apk {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: #FF4500; /* Mesma cor do tema PWA */
+            color: #ffffff;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(255, 69, 0, 0.3);
+            transition: all 0.25s ease;
+        }
+
+        .btn-apk:hover {
+            background-color: #e03d00;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 14px rgba(255, 69, 0, 0.4);
+        }
+
+        .btn-apk:active {
+            transform: translateY(0);
+        }
+    </style>
 </head>
 
-<body style="background-color: #000000;"> 
+<body style="background-color: #000000; color: #ffffff;"> 
     <header>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQea07uSLizR_DVpWtxwmb9WRWLpCojtgCWbQ&s" alt="seu bebado porco">
         
@@ -30,6 +65,14 @@
                 <li><a href="#beberpinga">BeberUmaPinga</a></li>
             </ul>
         </nav>
+
+        <!-- Botão de Download do APK -->
+        <div class="area-download">
+            <a href="app.apk" download class="btn-apk">
+                <i class="fa-solid fa-download"></i>
+                Baixar Nosso App (APK)
+            </a>
+        </div>
     </header>
 
     <main>
