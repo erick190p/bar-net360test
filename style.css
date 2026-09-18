@@ -1,0 +1,104 @@
+body {
+    background-color: #161616; 
+    color: #ffffff; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+
+h1 {
+    font-size: 32px;
+    color: #FF4500; /
+    text-transform: uppercase;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 15px; /
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    display: inline-block;
+}
+
+
+details {
+    background-color: #333;
+    padding: 15px;
+    border: 2px solid #555;
+    margin-top: 20px;
+    cursor: pointer;
+    color: rgb(255, 0, 0);
+}
+
+summary {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* ==========================================================
+   LINHAS DE REDIMENSIONAMENTO (RESPONSIVIDADE)
+   ========================================================== */
+
+
+@media (max-width: 1024px) {
+    body {
+        font-size: 18px;
+        padding: 15px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+    }
+
+    nav ul li a {
+        display: block; 
+        font-size: 22px;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}

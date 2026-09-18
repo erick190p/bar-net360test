@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar do Bira</title>
+    
+    <!-- Configurações PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#FF4500">
+    <link rel="apple-touch-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQea07uSLizR_DVpWtxwmb9WRWLpCojtgCWbQ&s">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body style="background-color: #000000;"> 
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQea07uSLizR_DVpWtxwmb9WRWLpCojtgCWbQ&s" alt="seu bebado porco">
+        
+        <h1>Bem-vindo ao Minha Pinga.net</h1>
+        <p>Quer beber uma Pinga?</p>
+        
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#beberpinga">BeberUmaPinga</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p>O conteúdo principal começa aqui....</p>
+        
+        <details>
+            <summary>Sobre</summary>
+            <p>Somos os maiores lixos e alma sebosa que mais tomam pinga em todo o Brasil, na região do Norte e Sul. Venha se tornar um gordo bêbado junto com a gente.</p>
+        </details>
+    </main>
+
+    <footer style="margin-top: 50px; text-align: center;">
+        <p>Siga a gente nas redes de cachaceiros:</p>
+        <div class="redes-sociais">
+            <a href="https://wa.me/seunumerodetel" target="_blank" style="color: #25D366; font-size: 30px; margin: 10px;"><i class="fab fa-whatsapp"></i></a>
+            
+            <a href="https://facebook.com/seuusuario" target="_blank" style="color: #1877F2; font-size: 30px; margin: 10px;"><i class="fab fa-facebook"></i></a>
+            
+            <a href="https://instagram.com/seuusuario" target="_blank" style="color: #E4405F; font-size: 30px; margin: 10px;"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- Registro do Service Worker -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js')
+            .then((reg) => console.log('Service Worker registrado com sucesso!', reg))
+            .catch((err) => console.error('Erro ao registrar Service Worker:', err));
+        });
+      }
+    </script>
+</body>
+</html>

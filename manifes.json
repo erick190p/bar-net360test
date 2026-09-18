@@ -1,0 +1,23 @@
+{
+  "short_name": "Bar do Bira",
+  "name": "Bar do Bira - Minha Pinga.net",
+  "icons": [
+    {
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQea07uSLizR_DVpWtxwmb9WRWLpCojtgCWbQ&s",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQea07uSLizR_DVpWtxwmb9WRWLpCojtgCWbQ&s",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "./index.html",
+  "background_color": "#000000",
+  "theme_color": "#FF4500",
+  "display": "standalone",
+  "orientation": "portrait"
+}
